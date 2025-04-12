@@ -20,7 +20,7 @@ void moverBispoD(int casas) {
     }
 }
 
-// Função recursiva para mover o Bispo apenas para cima (opcional, não usada no código)
+// Função recursiva para mover o Bispo apenas para cima 
 void moverBispoC(int casas) {
     if (casas > 0) {
         printf("Cima!\n");
@@ -67,7 +67,7 @@ int main() {
             // Simula o movimento em diagonal (5 vezes)
             for (i = 1; i < 6; i++) {
                 moverBispoD(1);
-                // Loop desnecessário, deixado aqui para possíveis incrementos futuros
+                
                 for (j = 1; j < 5; j++) {
                     printf("");	
                 }
@@ -83,7 +83,7 @@ int main() {
 
         case 4:
             printf("Você escolheu o Cavalo para movimentar!\n");
-            // Corrigido o erro lógico do for
+            
             for (i = 1; i <= 1; i++) {
                 moverCavalo(1); // Cavalo move 1 casas para cima
                 for (j = 1; j < 2; j++) {
